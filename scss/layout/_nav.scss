@@ -1,0 +1,33 @@
+header {
+    width: 100%;
+    background-color: $color-header;
+    position: fixed;
+    z-index: 1;
+
+    .navbar {
+        justify-content: center;
+
+        .navbar-brand {
+            color: #f6f8f5e3;
+
+            &:hover {
+                color: #4c8850;
+            }
+        }
+        .navbar-toggler{
+            color: #2d5e30;
+        }
+
+        .collapse {
+            .nav-link {
+                color: #fff;
+                text-align: center;
+
+                &:hover {
+                    color: #4c8850;
+                }
+            }
+        }
+
+    }
+}

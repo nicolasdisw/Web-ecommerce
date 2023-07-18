@@ -1,0 +1,642 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&family=Staatliches&display=swap");
+.btn-wsp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  line-height: 63px;
+  bottom: 25px;
+  right: 25px;
+  background: #00fb5c;
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: all 300ms ease;
+}
+.btn-wsp:hover {
+  background: #66e164;
+  color: #3b3939;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .btn-wsp:hover {
+    width: 63px;
+    height: 63px;
+    line-height: 66px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.animate__backInDown {
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(105, 187, 112);
+  position: fixed;
+  z-index: 1;
+}
+header .navbar {
+  justify-content: center;
+}
+header .navbar .navbar-brand {
+  color: rgba(246, 248, 245, 0.8901960784);
+}
+header .navbar .navbar-brand:hover {
+  color: #4c8850;
+}
+header .navbar .navbar-toggler {
+  color: #2d5e30;
+}
+header .navbar .collapse .nav-link {
+  color: #fff;
+  text-align: center;
+}
+header .navbar .collapse .nav-link:hover {
+  color: #4c8850;
+}
+
+.inicio {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/banner-inicio.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.inicio .presentacion {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  color: #eff5c7;
+}
+@media (max-width: 680px) {
+  .inicio .presentacion {
+    padding-left: 0;
+  }
+}
+.inicio .presentacion .bienvenida-p {
+  font-size: 30px;
+}
+@media (max-width: 768px) {
+  .inicio .presentacion .bienvenida-p {
+    font-size: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .inicio .presentacion .bienvenida-p {
+    font-size: 23px;
+  }
+}
+.inicio .presentacion .h2-presentacion {
+  font-size: 35px;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .inicio .presentacion .h2-presentacion {
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 480px) {
+  .inicio .presentacion {
+    font-size: 25px;
+    font-weight: 600;
+  }
+}
+
+.about .card-about {
+  background-color: rgba(47, 44, 42, 0.3019607843);
+}
+.about .card-about .titlee-about {
+  color: #bd5a31;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.about .card-about .subti-about {
+  color: #5b2c2c;
+}
+.about .card-about .parrafo-card-text-about {
+  color: #636161;
+  padding: 20px 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .about .card-about .parrafo-card-text-about {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+.about .card-about .img-fluid {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+  .about .card-about .img-fluid {
+    padding: 130px 10px;
+    object-fit: unset;
+  }
+}
+@media (max-width: 480px) {
+  .about .card-about .img-fluid {
+    padding: 60px 30px;
+    object-fit: unset;
+  }
+}
+.about .card-about .card-body-about {
+  text-align: center;
+  width: 100%;
+  padding: 70px 70px;
+}
+@media (max-width: 480px) {
+  .about .card-about .card-body-about {
+    padding: 10px 10px;
+  }
+}
+
+.productos {
+  width: 100%;
+  background-color: rgba(207, 192, 174, 0.6862745098);
+}
+.productos .title-productos {
+  text-decoration: underline;
+  color: rgba(98, 95, 95, 0.631372549);
+  padding: 10px 0;
+  font-weight: 700;
+}
+.productos .card-body {
+  text-align: center;
+  height: 150px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: rgba(204, 191, 164, 0.26);
+}
+
+.row-cols-md-3 {
+  padding-bottom: 15px;
+}
+
+.container .row .col-12 {
+  transition: transform 0.2s ease;
+}
+.container .row .col-12:hover {
+  transform: scale(0.9);
+}
+
+.card-img-top {
+  width: auto;
+  padding: 0;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carrou2 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/carrou2.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  filter: grayscale(0.3);
+}
+.carrou2:hover {
+  filter: grayscale(0.1);
+}
+
+.services {
+  background-color: rgba(239, 235, 231, 0.8117647059);
+}
+.services .mis-services .title-services3 {
+  width: 100%;
+  text-decoration: underline;
+  color: #898181;
+  padding: 10px 0;
+  font-weight: 700;
+}
+.services .mis-services .h5-card {
+  color: #bd5a31;
+}
+.services .mis-services .card-body {
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: rgba(204, 191, 164, 0.26);
+}
+.services .mis-services .card-img-services {
+  width: 100%;
+  height: 450px;
+  object-position: center center;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.services .mis-services .card-title {
+  padding-bottom: 10px;
+}
+.services .mis-services .col-md-6 {
+  padding-bottom: 15px;
+}
+
+.banner-products {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("../assets/images/mochilaguanaco.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.banner-products .banner-presentacion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 180px;
+  align-items: center;
+  color: #eff5c7;
+}
+@media (max-width: 680px) {
+  .banner-products .banner-presentacion {
+    padding-left: 0;
+  }
+}
+.banner-products .banner-presentacion .banner-bienvenida {
+  font-size: 15px;
+}
+.banner-products .banner-presentacion .banner-h2-presentacion {
+  font-size: 35px;
+  font-weight: 700;
+}
+.banner-products .banner-presentacion .banner-descripcion {
+  font-size: 20px;
+}
+
+.services__productos {
+  background: linear-gradient(rgba(230, 212, 169, 0.3), rgba(230, 203, 141, 0.275));
+}
+.services__productos .services__title-services-p1 {
+  color: rgb(93, 72, 72);
+  font-weight: 700;
+}
+.services__productos .card .card-img-top__services {
+  width: auto;
+  padding: 0;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+.services__productos .card .card-body {
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: rgba(108, 105, 98, 0.261);
+}
+.services__productos .card .card-body .boton-trabajos {
+  text-decoration: none;
+  margin: 25px;
+  padding: 9px 9px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #5a976c;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.services__productos .card .card-body .boton-trabajos:hover {
+  background-color: rgba(81, 108, 60, 0.4705882353);
+  color: #000;
+}
+@media (max-width: 991px) {
+  .services__productos .card .card-body .boton-trabajos {
+    margin: 0;
+    padding: 7px 7px;
+    font-weight: 200;
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .services__productos .card .card-body .boton-trabajos {
+    margin: 0;
+    padding: 6px 6px;
+    font-weight: 200;
+    font-size: 10px;
+  }
+}
+.services__productos .card .card-body .span-cards {
+  display: inline-block;
+  background-color: rgba(156, 196, 150, 0.9607843137);
+  border: none;
+  color: rgb(14, 14, 14);
+  text-align: center;
+  font-size: 16px;
+  padding: 8px 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+@media (max-width: 991px) {
+  .services__productos .card .card-body .span-cards {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+}
+@media (max-width: 768px) {
+  .services__productos .card .card-body .span-cards {
+    font-size: 10px;
+    padding: 5px 13px;
+  }
+}
+
+.unisex-products {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/guanaco3.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.unisex-products .presentacion-products {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 180px;
+  align-items: center;
+  color: #eff5c7;
+}
+.unisex-products .presentacion-products .bienvenida-products {
+  font-size: 15px;
+}
+.unisex-products .presentacion-products .h2-presentacion2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.services__productos-2 {
+  background: linear-gradient(rgba(230, 212, 169, 0.3), rgba(230, 203, 141, 0.275));
+}
+.services__productos-2 .services__title-services-p2 {
+  color: rgb(93, 72, 72);
+  font-weight: 700;
+  text-align: center;
+}
+.services__productos-2 .card .card-img-top__services-2 {
+  width: auto;
+  padding: 0;
+  height: 200px;
+  object-fit: contain;
+  object-position: center;
+}
+.services__productos-2 .card .card-body {
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: rgba(162, 135, 79, 0.52);
+}
+.services__productos-2 .card .card-body .boton-trabajos {
+  text-decoration: none;
+  margin: 25px;
+  padding: 9px 9px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: rgba(156, 117, 39, 0.768627451);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.services__productos-2 .card .card-body .boton-trabajos:hover {
+  background-color: rgba(132, 127, 62, 0.4705882353);
+  color: #000;
+}
+@media (max-width: 991px) {
+  .services__productos-2 .card .card-body .boton-trabajos {
+    margin: 0;
+    padding: 7px 7px;
+    font-weight: 200;
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .services__productos-2 .card .card-body .boton-trabajos {
+    margin: 0;
+    padding: 6px 6px;
+    font-weight: 200;
+    font-size: 10px;
+  }
+}
+.services__productos-2 .card .card-body .span-cards {
+  display: inline-block;
+  background-color: rgba(207, 152, 80, 0.7215686275);
+  border: none;
+  color: rgb(14, 14, 14);
+  text-align: center;
+  font-size: 16px;
+  padding: 8px 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+@media (max-width: 991px) {
+  .services__productos-2 .card .card-body .span-cards {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+}
+@media (max-width: 768px) {
+  .services__productos-2 .card .card-body .span-cards {
+    font-size: 10px;
+    padding: 5px 13px;
+  }
+}
+
+.homedeco-products {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/homedeco.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.homedeco-products .homedeco-presentacion {
+  display: flex;
+  flex-direction: column;
+  padding-top: 180px;
+  align-items: center;
+  color: #eff5c7;
+}
+.homedeco-products .homedeco-presentacion .homedeco-bienvenida {
+  font-size: 15px;
+}
+.homedeco-products .homedeco-presentacion .homedeco-h2-presentacion3 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.services__productos-3 {
+  background: linear-gradient(rgba(230, 212, 169, 0.3), rgba(230, 203, 141, 0.275));
+}
+.services__productos-3 .services__title-services-p3 {
+  color: rgb(93, 72, 72);
+  font-weight: 700;
+  text-align: center;
+}
+.services__productos-3 .card .card-img-top__services-3 {
+  width: auto;
+  padding: 0;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+.services__productos-3 .card .card-body {
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: rgba(236, 183, 218, 0.439);
+}
+.services__productos-3 .card .card-body .boton-trabajos {
+  text-decoration: none;
+  margin: 25px;
+  padding: 9px 9px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: rgba(128, 84, 106, 0.7843137255);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.services__productos-3 .card .card-body .boton-trabajos:hover {
+  background-color: rgba(132, 127, 62, 0.4705882353);
+  color: #000;
+}
+@media (max-width: 991px) {
+  .services__productos-3 .card .card-body .boton-trabajos {
+    margin: 0;
+    padding: 7px 7px;
+    font-weight: 200;
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .services__productos-3 .card .card-body .boton-trabajos {
+    margin: 0;
+    padding: 6px 6px;
+    font-weight: 200;
+    font-size: 10px;
+  }
+}
+.services__productos-3 .card .card-body .span-cards {
+  display: inline-block;
+  background-color: rgba(237, 164, 203, 0.7215686275);
+  border: none;
+  color: rgb(14, 14, 14);
+  text-align: center;
+  font-size: 16px;
+  padding: 8px 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+@media (max-width: 991px) {
+  .services__productos-3 .card .card-body .span-cards {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+}
+@media (max-width: 768px) {
+  .services__productos-3 .card .card-body .span-cards {
+    font-size: 10px;
+    padding: 5px 13px;
+  }
+}
+
+.pie-pagina {
+  width: 100%;
+  background-color: #4c8850;
+  color: #fff;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 45px 0px;
+}
+@media (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 35px 0px;
+    text-align: center;
+  }
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 200px;
+  height: 170px;
+  margin: auto;
+  object-fit: contain;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .box .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  margin-right: 10px;
+  background-color: rgba(207, 192, 174, 0.3529411765);
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .box .red-social a:hover {
+  color: #ecbba6;
+}
+.pie-pagina .grupo-2 {
+  background-color: #8cc29c;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=main.css.map */
